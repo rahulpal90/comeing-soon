@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+   min-height: 100vh;  
+    background: url('https://t4.ftcdn.net/jpg/03/84/55/29/360_F_384552930_zPoe9zgmCF7qgt8fqSedcyJ6C6Ye3dFs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container::after{
+    contain: '';
+    position: absolute;
+    background: rgba(65,158,212, 0.6);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.form{
+    position: absolute;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    max-width: 350px;
+    margin: 30px auto;
+    border-radius: 10px;
+
+}
+
+.form form input{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    border: 0;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 12px;
+    border-radius: 8px;
+
+}
+
+.form form button{
+    width: 200px;
+    margin-top: 20px;
+    height: 40px;
+    background: rgb(167, 52, 52);
+    border: 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #f0e6e6;
+    font-weight: 600;
+
+}
+.form h1{
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+}
+.form p{
+    color: #605c5c;
+}
+
+.social-icon i{
+    font-size: 1.4rem;
+    margin: 0 12px;
+    color: #3b3939;
+
+}
